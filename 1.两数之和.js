@@ -19,7 +19,7 @@ var twoSum = function(nums, target) {
         }
         //不存在则保存数值+下标
         maps.set(nums[i],i);
-        //test16:33
+        //test16:38
     }
 };
 // @lc code=end
