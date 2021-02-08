@@ -83,6 +83,7 @@ int main() {
     int result = maxDepth(root);//本题的输出
     cout << result << endl;
     
+    system("pause");
     return 0;
 
 }

@@ -1,2 +1,2 @@
-
-    if (node == nullptr) {
+   system("pause");
+   return 0;

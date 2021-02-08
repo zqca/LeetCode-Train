@@ -34,5 +34,6 @@ int main() {
     string result = removeDuplicates(s);
     cout << result;
 
+    system("pause");
     return 0;
 }

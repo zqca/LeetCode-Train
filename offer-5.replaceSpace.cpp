@@ -34,6 +34,7 @@ int main() {
     string s = "We are happy.";
     string result = replaceSpace(s);
     cout << result << endl;
+    system("pause");
     return 0;
 
 }

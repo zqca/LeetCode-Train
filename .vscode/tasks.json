@@ -4,7 +4,7 @@
         {
             "type": "shell",
             "label": "compile",
-            "command": "g++",
+            "command": "D:\\mingw64\\bin\\g++.exe",
             "args": [
                 "-g",
                 "${file}",

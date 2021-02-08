@@ -28,5 +28,6 @@ int main(){
     string magazine = "aab";
     bool result = canConstruct(ransomNote, magazine);
     cout << result << endl;
-
+    system("pause");
+    return 0;
 }

@@ -68,5 +68,6 @@ int main() {
     string s = "()[]{}";
     cout << isValid(s) << endl;
 
+    system("pause");
     return 0;
 }

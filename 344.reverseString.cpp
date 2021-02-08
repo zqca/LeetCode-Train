@@ -16,6 +16,7 @@ int main() {
     for(char c : s) {
         cout << c << endl;
     }
-    return 1;
+    system("pause");
+    return 0;
 
 }

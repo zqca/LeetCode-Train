@@ -17,5 +17,6 @@ int main() {
     s = reverseLeftWords(s, n);
     cout << s << endl;
 
+    system("pause");
     return 0;
 }

@@ -46,5 +46,6 @@ int main() {
     int result = evalRPN(tokens);
     cout << result;
 
+    system("pause");
     return 0;
 }

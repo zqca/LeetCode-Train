@@ -61,5 +61,6 @@ int main() {
     for (char c : result) {
         cout << c << endl;
     }
-    
+    system("pause");
+    return 0;    
 }

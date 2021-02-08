@@ -42,8 +42,11 @@ int main()
 	vector<int> nums={8,79,2,7};
 	vector<int> result;
 	result = twoSum(nums, target);
-	for (auto i = 0; i < result.size(); ++i) 
+	for (auto i = 0; i < result.size(); ++i) {
 		cout << result[i] << " ";
-
+	}
+		
+	system("pause");
 	return 1;
+	
 }

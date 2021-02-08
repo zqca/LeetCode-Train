@@ -61,5 +61,6 @@ int main() {
         cout << result[i] << endl;
     }
     
+    system("pause");
     return 0;
 }

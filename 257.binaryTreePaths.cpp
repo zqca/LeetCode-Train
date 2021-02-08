@@ -120,6 +120,7 @@ int main() {
         cout << *item << endl;
     }
      
+    system("pause");
     return 0;
 
 }

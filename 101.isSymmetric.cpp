@@ -99,6 +99,7 @@ int main() {
     bool result = isSymmetric(root);//本题的输出
     cout << result << endl;
     
+    system("pause");
     return 0;
 
 }

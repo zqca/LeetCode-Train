@@ -44,6 +44,7 @@ int main() {
     string s = "a b";
     s = reverseWords(s);
     cout << s << endl;
+    system("pause");
     return 0;
 
 }

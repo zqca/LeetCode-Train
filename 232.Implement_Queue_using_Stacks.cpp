@@ -61,6 +61,7 @@ int main() {
     bool param_4 = obj->empty();
     cout << param_4 << endl;
 
+    system("pause");
     return 0;
 }
 

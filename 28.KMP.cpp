@@ -68,6 +68,8 @@ int main() {
     //输出子串在原串中首次出现的位置，如果没有输出-1
     int pos = KMP(pattern, target);
     cout << pos;
+
+    system("pause");
     return 0;
 
 }

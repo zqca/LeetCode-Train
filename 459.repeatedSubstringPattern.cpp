@@ -45,6 +45,7 @@ int main() {
 
     bool flag = repeatedSubstringPattern(s1);
     cout << flag << endl;
+    system("pause");
     return 0;
 
 }
