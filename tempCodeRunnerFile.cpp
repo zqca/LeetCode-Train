@@ -1,2 +1,1 @@
-   system("pause");
-   return 0;
+if(node == NULL
