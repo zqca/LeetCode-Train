@@ -51,5 +51,27 @@
         "map": "cpp",
         "set": "cpp",
         "xtree": "cpp"
-    }
+    },
+    "cSpell.ignoreWords": [
+        "c",
+        "ch",
+        "commitment",
+        "d",
+        "gen",
+        "h",
+        "hash",
+        "is",
+        "leftline",
+        "leftline textbf p d ch gen x nonce commitment sc hash h valid c time s",
+        "nonce",
+        "p",
+        "postive",
+        "s",
+        "sc",
+        "stoi",
+        "textbf",
+        "time",
+        "valid",
+        "x"
+    ]
 }
