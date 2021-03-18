@@ -8,7 +8,7 @@ int maxSubArray(vector<int>& nums) {
     vector<int> dp(nums.size(),INT32_MIN);
     //以i结尾的的数组中de 最大连续和
     dp[0] = nums[0];
-    int ans = INT32_MIN;
+    int ans = dp[0];
 
     for(int i = 1; i < nums.size(); i++) {
         if(dp[i - 1] > 0) {
