@@ -1,3 +1,8 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
 void deMerge(vector<int>& vec0, vector<int>& vec1, vector<int>& vec2){
     //将vec0拆散到vec1,vec2
     int n = vec0.size();
@@ -47,4 +52,11 @@ int reinitializePermutation(int n) {
 
     return ans;
 
+}
+
+int main() {
+    int n = 6;
+    cout << reinitializePermutation(n) << endl;
+
+    return 0;
 }
