@@ -71,7 +71,7 @@ vector<int> insertion_sort(vector<int> raw) {
     return ans;
 }
 
-//TODO:快速排序
+//TODO:快速排序，超时！！！！
 int myPartition(vector<int> &vec, int low, int high) {
     //超时！！！！
     //以第一个元素作为标准
