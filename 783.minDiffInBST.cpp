@@ -127,7 +127,6 @@ int main(){
     int ans = minDiffInBST(root);
 
     cout << ans;
-
     return 0;
 
 }
