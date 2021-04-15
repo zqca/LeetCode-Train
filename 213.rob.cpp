@@ -15,7 +15,7 @@ int robRange(vector<int>& nums) {
     dp[1] = max(nums[0], nums[1]);
 
     for(int i = 2; i < nums.size(); i++) {
-        dp[i] = max(dp[i - 1], dp[i - 2] + nums[i]);
+        dp[i] = max(dp[i - 1], dp[i - 2] + nums[i]);//分别是。当前不偷，以及偷
     }
 
     return dp[nums.size() - 1];
