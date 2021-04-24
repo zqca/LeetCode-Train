@@ -10,7 +10,7 @@ int combinationSum4(vector<int>& nums, int target) {
         //先遍历背包
         for(int i = 0; i < nums.size(); i++) {
             //再遍历物品
-            if(j >= nums[i] && dp[j] < INT_MAX - dp[j - nums[i]]) {
+            if(j >= nums[i] && dp[j] < INT_MAX - dp[j - nums[i]]) {//防止溢出，题意保证最终结果不溢出
                 dp[j] += dp[j - nums[i]];
             }
             
