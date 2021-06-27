@@ -1,7 +1,3 @@
-/**
- * @param {string} s
- * @return {string}
- */
 var replaceSpace = function(s) {
     let arr = s.split("");
     let oldLen = arr.length;

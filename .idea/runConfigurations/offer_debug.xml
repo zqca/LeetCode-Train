@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="offer-debug" type="NodeJSConfigurationType" application-parameters="$FileName$" working-dir="$PROJECT_DIR$/Offer-JS">
+    <method v="2" />
+  </configuration>
+</component>
