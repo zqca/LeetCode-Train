@@ -1,9 +1,5 @@
-/**
- * @param {number[]} numbers
- * @return {number}
- */
 var minArray = function(numbers) {
-    //二分，原数组是非减的
+    //二分，原数组是非减的,右边的一定不是最小值
     let left = 0;
     let right = numbers.length - 1;
     let mid;
