@@ -16,7 +16,7 @@ function TreeNode(val) {
     this.left = this.right = null;
 }
 
-var buildTree = function(preorder, inorder) {
+var buildTree0 = function(preorder, inorder) {
     if(preorder.length === 0){
         return null;
     }
@@ -44,6 +44,14 @@ var buildTree = function(preorder, inorder) {
     return ans;
 };
 
+var buildTree = function(preorder, inorder) {
+    if(!inorder.length) return null
+    let tmp = preorder[0],mid = inorder.indexOf(tmp)
+    let root = new TreeNode(tmp)
+    root.left = buildTree(preorder.slice(1,mid+1),inorder.slice(0,mid))
+    root.right = buildTree(preorder.slice(mid+1),inorder.slice(mid + 1))
+    return root
+};
 
 ///debug
 preorder = [3,9,20,15,7]
