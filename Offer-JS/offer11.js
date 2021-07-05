@@ -18,7 +18,7 @@ var minArray = function(numbers) {
             right = mid;
         }
         else{
-            --right;//缩减范围
+            --right;//缩减范围，这个时候可以缩小right,缩小right不会丢失最小值
         }
     }
     return numbers[left];
