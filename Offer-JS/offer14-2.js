@@ -8,7 +8,7 @@
 let max = function (a, b){
     return a > b ? a : b;
 }
-var cuttingRope = function(n) {
+var cuttingRope_bad = function(n) {
     if(n === 2) return 1;
     let dp = new Array(1 + n).fill(BigInt(1));
     dp[2] = BigInt(2);//初始化
@@ -22,4 +22,38 @@ var cuttingRope = function(n) {
     return dp[n] % BigInt(1e9 + 7);
 };
 
-console.log(cuttingRope(1000))
+
+/**
+ * 使用数学的方法，尽可能使每段绳子的长度为3（涉及到求导的驻点e）
+ * 如果剩下的绳子长度为4，拆成2+2而不是3+1,
+ * 如果剩下的绳子长度是1，借一个3，拆成2+2
+ * @param n
+ */
+
+var cuttingRope_pro = function(n){
+    if(n == 2) return 1;
+    if(n == 3) return 2;
+
+    let ans = 1;
+
+    let md = 1e9 + 7;
+
+    while(n > 4){
+        ans = (3 * ans) % md;
+        n = n - 3;
+    }
+    if (n == 2){
+        ans = (2 * ans) % md;
+    }
+    if(n == 3){
+        ans = (3 * ans) % md;
+    }
+    if (n == 4){
+        ans = (4 * ans) % md;
+    }
+
+    return  ans;
+}
+
+console.log(cuttingRope_bad(1000))
+console.log(cuttingRope_pro(1000))
