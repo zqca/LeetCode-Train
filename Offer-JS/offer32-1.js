@@ -22,8 +22,7 @@ var levelOrder = function(root) {
     while(que.length){
         let len = que.length;
         for(let i = 0; i < len; ++i){
-            let node = que[0];
-            que.shift();
+            let node =que.shift();
             ans.push(node.val);
             if(node.left){
                 que.push(node.left);
