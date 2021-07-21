@@ -100,6 +100,7 @@ int myPartition(vector<int> &vec, int low, int high) {
     return low + diff;
 }
 
+//TODO:快速排序
 int partition(vector<int> &vec, int low, int high) {
     int pivot = vec[low];
 
