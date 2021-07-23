@@ -50,9 +50,8 @@ var findNthDigit = function(n) {
     //第一步:数字长度为dig，第一个数字start为10^(dig - 1),
     //       数字数量cnt为9*10^(dig - 1)，该区间所有数字的长度digsCount为dig * 9*10^(dig - 1)
     let dig = 1, start = 1, cnt = 9, digsCount = 9;
-    let sumDigs = 1;
+
     while(n - digsCount > 0){
-        sumDigs += digsCount;//截至上一个区间结尾累计的长度=当前区间第一个数字的index
         n = n - digsCount;
         ++dig;
         start = Math.pow(10, dig - 1);
