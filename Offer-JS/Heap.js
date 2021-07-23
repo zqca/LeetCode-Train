@@ -108,7 +108,7 @@ class Heap {
 
 //debug
 let arr1 = [13,2,4,9,5];
-let myHeap = new Heap(arr1, 'big');
+let myHeap = new Heap(arr1, 'big');//构造大顶堆
 myHeap.insert(99);
 myHeap.top();
 myHeap.extract();
