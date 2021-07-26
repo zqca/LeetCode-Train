@@ -33,7 +33,7 @@ var lengthOfLongestSubstring = function(s) {
  * @return {number}
  * 闭区间的双指针
  */
-var lengthOfLongestSubstring0 = function(s) {
+var lengthOfLongestSubstring = function(s) {
     let len = s.length;
     let ans = 1;//最终答案
     if(len < 2) return len;
@@ -42,6 +42,7 @@ var lengthOfLongestSubstring0 = function(s) {
     let last;//最后出现的位置
     let left = 0, right = 0;
     let tmp;//区间长度
+
     while(right + 1 < len){
         ++right;//扩大区间
         last = mp[s[right]];
@@ -61,5 +62,5 @@ var lengthOfLongestSubstring0 = function(s) {
 //debug
 
 let s = "bbb";
-console.log(lengthOfLongestSubstring0(s))
+console.log(lengthOfLongestSubstring(s))
 
