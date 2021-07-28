@@ -26,3 +26,14 @@ var maxDepth = function(root) {
     dfs(root, 1);
     return ans;
 };
+
+/**
+ * 优化
+ * @param {TreeNode} root
+ * @return {number}
+ */
+var maxDepth = function(root) {
+    //计算树的深度
+    if(root === null) return 0;
+    return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
+};
