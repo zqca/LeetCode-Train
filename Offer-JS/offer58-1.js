@@ -17,6 +17,6 @@ var reverseWords = function(s) {
  * @return {string}
  */
 var reverseWords = function(s) {
-    s = s.replace(/ +/g, ' ');//将多余的空格变成一个
+    s = s.trim().replace(/ +/g, ' ');//将多余的空格变成一个
     return s.split(' ').reverse().join(" ");
 };
