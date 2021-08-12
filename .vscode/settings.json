@@ -50,7 +50,8 @@
         "xtr1common": "cpp",
         "map": "cpp",
         "set": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "unordered_set": "cpp"
     },
     "cSpell.ignoreWords": [
         "c",

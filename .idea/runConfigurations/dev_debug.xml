@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="dev-debug" type="NodeJSConfigurationType" application-parameters="$FileName$" path-to-node="node" working-dir="$PROJECT_DIR$/DEV-JS">
+    <method v="2" />
+  </configuration>
+</component>
